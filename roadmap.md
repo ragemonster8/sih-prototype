@@ -1,0 +1,4 @@
+- [ ] Build a home page explaining the PESticides chartering solution.
+- [ ] Build an interactive dashboard covering the proposed features.
+- [ ] Build a user-friendly scenario form and a transparent, illustrative results flow.
+- [ ] Verify the prototype on desktop and mobile.
