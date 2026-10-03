@@ -33,8 +33,8 @@ export const initialScenario: Scenario = {
   contract: "spot", risk: 55, bunker: 620, coalPrice: 113,
 };
 export function evaluate(s: Scenario) {
-  const origin = origins.find(x => x.id === s.origin) ?? origins[0];
-  const port = ports.find(x => x.id === s.destination) ?? ports[0];
+  const origin = origins.find(x => x.id === s.origin) ?? { id: "newcastle", name: "Newcastle, Australia", country: "Australia", distance: 5350, rate: 20.4, coal: 113 };
+  const port = ports.find(x => x.id === s.destination) ?? { id: "paradip", name: "Paradip", draft: 14.5, loa: 260, beam: 40, wait: 2.8, dues: 175000 };
   const quantity = Math.max(10000, Math.min(1000000, Number(s.quantity) || 75000));
   const horizon = [30, 60, 90].includes(Number(s.horizon)) ? Number(s.horizon) : 30;
   const risk = Math.max(0, Math.min(100, Number(s.risk) || 0));
