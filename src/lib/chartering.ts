@@ -60,7 +60,7 @@ export function evaluate(s: Scenario) {
     { name: "3-voyage agreement", total: best.total * 1.025, exposure: 56, note: "Moderate price stability" },
     { name: "6-month agreement", total: best.total * 1.045, exposure: 28, note: "Lowest rate exposure" },
   ] : [];
-  const sourcing = origins.map(o => ({ name: o.country, total: (Number(s.coalPrice) || o.coal) * quantity + (best?.total ?? 0) * (o.distance / origin.distance) })).sort((a,b) => a.total - b.total);
+  const sourcing = origins.map(o => ({ name: o.country, total: (o.coal + ((Number(s.coalPrice) || origin.coal) - origin.coal)) * quantity + (best?.total ?? 0) * (o.distance / origin.distance) })).sort((a,b) => a.total - b.total);
   return { origin, port, quantity, horizon, risk, distance, trend, rows, best, contracts, sourcing, action, riskLevel };
 }
 export const money = (n: number) => "$" + Math.round(n).toLocaleString("en-US");
