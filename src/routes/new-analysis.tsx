@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 import { PrototypeButton } from "@/components/ui/prototype-button";
 import { evaluate, origins, ports, type Scenario } from "@/lib/chartering";
 import { useScenario } from "@/lib/scenario-context";
-export const Route = createFileRoute("/new-analysis")({ head: () => ({ meta: [{ title: "Plan a Voyage — PESticides" }, { name: "description", content: "Enter coal cargo, route, dates, contract preference and risk tolerance to explore an illustrative vessel chartering decision." }, { property: "og:title", content: "Plan a Voyage — PESticides" }, { property: "og:description", content: "Build a shipment scenario and compare feasible vessels, costs and charter options." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: NewAnalysis });
+export const Route = createFileRoute("/new-analysis")({ head: () => ({ meta: [{ title: "Plan a Voyage — Charterwise" }, { name: "description", content: "Enter coal cargo, route, dates, contract preference and risk tolerance to explore an illustrative vessel chartering decision." }, { property: "og:title", content: "Plan a Voyage — Charterwise" }, { property: "og:description", content: "Build a shipment scenario and compare feasible vessels, costs and charter options." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: NewAnalysis });
 function NewAnalysis() {
   const { scenario, setScenario, setHasRun } = useScenario();
   const [form, setForm] = useState<Scenario>(scenario);
