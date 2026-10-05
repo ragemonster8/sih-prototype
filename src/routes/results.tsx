@@ -5,7 +5,7 @@ import { PrototypeButton } from "@/components/ui/prototype-button";
 import { compactMoney, evaluate, money, ports } from "@/lib/chartering";
 import { decisionInsights } from "@/lib/decision-insights";
 import { useScenario } from "@/lib/scenario-context";
-export const Route = createFileRoute("/results")({ head: () => ({ meta: [{ title: "Voyage Decision — PESticides" }, { name: "description", content: "Review an illustrative chartering recommendation with vessel fit, line-item voyage economics and contract trade-offs." }, { property: "og:title", content: "Voyage Decision — PESticides" }, { property: "og:description", content: "Explore a transparent vessel recommendation and cost breakdown for an East Coast coal import." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: Results });
+export const Route = createFileRoute("/results")({ head: () => ({ meta: [{ title: "Voyage Decision — Charterwise" }, { name: "description", content: "Review an illustrative chartering recommendation with vessel fit, line-item voyage economics and contract trade-offs." }, { property: "og:title", content: "Voyage Decision — Charterwise" }, { property: "og:description", content: "Explore a transparent vessel recommendation and cost breakdown for an East Coast coal import." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: Results });
 function Results() {
   const { scenario, hasRun } = useScenario(); const d = evaluate(scenario); const best = d.best;
   const [comparison, setComparison] = useState("bunker");

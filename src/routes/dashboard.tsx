@@ -7,7 +7,7 @@ import { useScenario } from "@/lib/scenario-context";
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 export const Route = createFileRoute("/dashboard")({
-  head: () => ({ meta: [{ title: "Decision Dashboard — PESticides" }, { name: "description", content: "Explore illustrative freight outlooks, vessel feasibility, voyage costs and contract options for an East Coast coal shipment." }, { property: "og:title", content: "Decision Dashboard — PESticides" }, { property: "og:description", content: "An explainable view of freight risk, port fit, vessel costs and chartering choices." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: Dashboard,
+  head: () => ({ meta: [{ title: "Decision Dashboard — Charterwise" }, { name: "description", content: "Explore illustrative freight outlooks, vessel feasibility, voyage costs and contract options for an East Coast coal shipment." }, { property: "og:title", content: "Decision Dashboard — Charterwise" }, { property: "og:description", content: "An explainable view of freight risk, port fit, vessel costs and chartering choices." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: Dashboard,
 });
 const chartData = [ { day: "Today", value: 100, low: 100, high: 100 }, { day: "+15d", value: 102, low: 97, high: 107 }, { day: "+30d", value: 104, low: 94, high: 113 }, { day: "+45d", value: 106, low: 93, high: 118 }, { day: "+60d", value: 109, low: 91, high: 123 }, { day: "+75d", value: 110, low: 89, high: 128 }, { day: "+90d", value: 112, low: 87, high: 133 } ];
 function Dashboard() {
