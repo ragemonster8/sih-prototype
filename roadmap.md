@@ -1,4 +1,5 @@
 - [x] Build a home page, dashboard, shipment form, and transparent results flow.
 - [x] Verify the core prototype on desktop and mobile.
-- [ ] Add optional, scenario-derived insights and a what-if comparison without changing core recommendations.
-- [ ] Verify the enhanced dashboard and results on desktop and mobile.
+- [x] Add optional, scenario-derived insights and a what-if comparison without changing core recommendations.
+- [x] Verify the enhanced dashboard and results on desktop and mobile.
+- [x] Rename the product to Charterwise across pages, navigation, footer, and metadata.
