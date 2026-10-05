@@ -29,7 +29,7 @@ describe("Supplementary planning aids preserve the core", () => {
   it.each([30, 60, 90])("matches the existing %s-day core trend at the chart endpoint", horizon => {
     const scenario = { ...initialScenario, horizon };
     const chart = illustrativeOutlook(scenario);
-    expect(chart[0].value).toBe(100);
+    expect(chart[0]?.value).toBe(100);
     expect(chart.at(-1)?.value).toBeCloseTo(100 * (1 + evaluate(scenario).trend));
   });
 });
