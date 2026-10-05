@@ -3,3 +3,5 @@
 - [x] Add optional, scenario-derived insights and a what-if comparison without changing core recommendations.
 - [x] Verify the enhanced dashboard and results on desktop and mobile.
 - [x] Rename the product to Charterwise across pages, navigation, footer, and metadata.
+- [x] Compare supplied project documentation and add supported decision aids while preserving the current UI and core model.
+- [x] Verify the added comparisons, schedule indicators, and data caveats.
